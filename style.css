@@ -87,6 +87,82 @@ a {
   z-index: 1000;
   flex-direction: column;
 }
+/* Base nav menu styles */
+.navbar .nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar .nav-menu li {
+  position: relative;
+}
+
+/* Hide all dropdowns by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 220px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show on hover */
+.dropdown:hover > .dropdown-menu,
+.sub-dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Submenus positioned to the right */
+.sub-dropdown .dropdown-menu {
+  top: 0;
+  left: 100%;
+}
+
+/* Optional: make nested dropdowns look cleaner */
+.dropdown-menu li {
+  white-space: nowrap;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+/* Hide all dropdowns by default */
+.dropdown-menu {
+  display: none;
+}
+
+/* Show on desktop hover */
+@media (min-width: 769px) {
+  .dropdown:hover > .dropdown-menu,
+  .sub-dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Show on mobile if 'show' class is added */
+@media (max-width: 768px) {
+  .dropdown.show > .dropdown-menu,
+  .sub-dropdown.show > .dropdown-menu {
+    display: block;
+  }
+}
 
 .dropdown-menu li {
   width: 100%;

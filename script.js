@@ -25,13 +25,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const submenu = item.querySelector(".dropdown-menu");
     if (!submenu) return;
 
-    item.addEventListener("mouseenter", () => {
-      if (isDesktop()) submenu.style.display = "block";
-    });
+    if (isDesktop()) {
+      // Desktop hover events
+      item.addEventListener("mouseenter", () => {
+        submenu.style.display = "block";
+      });
 
-    item.addEventListener("mouseleave", () => {
-      if (isDesktop()) submenu.style.display = "none";
-    });
+      item.addEventListener("mouseleave", () => {
+        submenu.style.display = "none";
+      });
+    } else {
+      // Mobile click toggle
+      const triggerLink = item.querySelector("a");
+      if (triggerLink) {
+        triggerLink.addEventListener("click", (e) => {
+          e.preventDefault();
+          item.classList.toggle("show"); // Toggle class to show/hide
+        });
+      }
+    }
   });
 
   // Close mobile nav on outside click
@@ -65,15 +77,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tabs.forEach((tab, i) => {
     tab.addEventListener("click", () => {
-      tabs.forEach(t => t.classList.remove("active"));
-      contents.forEach(c => c.classList.remove("active"));
+      tabs.forEach((t) => t.classList.remove("active"));
+      contents.forEach((c) => c.classList.remove("active"));
 
       tab.classList.add("active");
       contents[i].classList.add("active");
     });
   });
 
-  // Toggle buttons (car or van) logic
+  // Toggle buttons (car or van)
   const toggles = document.querySelectorAll(".toggle-buttons .toggle");
   const carForm = document.getElementById("car-form");
   const vanForm = document.getElementById("van-form");
@@ -83,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
       toggles.forEach((btn) => btn.classList.remove("active"));
       toggle.classList.add("active");
 
-      // Show relevant form
       if (toggle.dataset.type === "car") {
         carForm.style.display = "flex";
         vanForm.style.display = "none";
@@ -94,4 +105,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-<button type="button" class="get-deals" onclick="window.location.href='https://www.lingscars.com/car-lease-deals/'">Get Deals</button>
