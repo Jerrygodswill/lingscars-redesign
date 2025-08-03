@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LingsCars Redesign</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="assets/lingcars.png" alt="LingsCars Logo" />
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          ☰
+        </button>
+
+        <nav class="nav-menu" id="navMenu" role="navigation">
+          <ul>
+            <li class="dropdown">
+              <a href="#">Leasing</a>
+              <ul class="dropdown-menu">
+                <li class="sub-dropdown">
+                  <a href="#">Car Leasing</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        href="https://www.lingscars.com/hubs/personal-car-leasing/"
+                        >Personal Car Leasing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.lingscars.com/hubs/business-car-leasing/"
+                        >Business Car Leasing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.lingscars.com/hubs/short-term-car-lease-deals/"
+                        >Short-Term Car Leasing</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.lingscars.com/hubs/poor-credit/"
+                        >Poor Credit Car Leasing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://docs.google.com/spreadsheets/d/1VKNHrQgBBGl_9c5rYO1_coKbjFYAIXm26njaFQrGTBw/edit?gid=0#gid=0/"
+                        >Poor Credit Used Car Leasing</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-dropdown">
+                  <a href="#" class="van-button">Van Leasing</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="https://www.lingscars.com/van-lease-deals"
+                        >All Van Lease Deals</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.lingscars.com/hubs/short-term-van-lease-deals/?page=1"
+                        >Short Term Van Lease Deals</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">Manufacturers</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="https://www.lingscars.com/audi-car-lease-deals/"
+                    >Audi</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.lingscars.com/bmw-car-lease-deals/"
+                    >BMW</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lingscars.com/volkswagen-car-lease-deals/"
+                    >Volkswagen</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.lingscars.com/skoda-car-lease-deals/"
+                    >Skoda</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.lingscars.com/renault-car-lease-deals/"
+                    >Renault</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.lingscars.com/car-manufacturers//"
+                    >More car Manufacturers</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">About Us</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="https://www.lingscars.com/about-us/">About Us</a>
+                </li>
+                <li><a href="https://museum.lingscars.com/">Museum</a></li>
+                <li>
+                  <a href="https://museum.lingscars.com/staff">Meet the Team</a>
+                </li>
+                <li>
+                  <a href="https://uk.trustpilot.com/review/lingscars.com"
+                    >Trustpilot Reviews</a
+                  >
+                </li>
+                <li><a href="https://museum.lingscars.com/faq">FAQ's</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a
+                href="https://customer.lingscars.com/lingo/login/?redirect_to=%2Flingo%2F"
+                >Your Account</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="contact-info">
+          <a href="tel:08063714132" class="phone">📞 0191 460 9444</a>
+          <a href="mailto:info@lingscars.com">Email us</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero-section">
+        <!-- Slideshow section -->
+        <section class="hero-slider">
+          <div
+            class="slide active"
+            style="background-image: url('assets/free-van-mockup-bundle-1.jpg')"
+          >
+            <div class="hero-content">
+              <h2>Drive Smarter with Better Deals</h2>
+              <p>
+                Compare prices, browse deals, and lease your dream car today!
+              </p>
+              <a
+                href="https://www.lingscars.com/car-lease-deals/"
+                class="cta-button"
+                >Explore Deals</a
+              >
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('assets/car-49278_640.webp')"
+          >
+            <div class="hero-content">
+              <h2>Luxury Cars. Affordable Prices.</h2>
+              <p>Find unbeatable lease offers from trusted brands.</p>
+              <a
+                href="https://www.lingscars.com/car-lease-deals/"
+                class="cta-button"
+                >View Offers</a
+              >
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('assets/pexels-photo-116675.jpeg')"
+          >
+            <div class="hero-content">
+              <h2>Your Dream Car is Waiting</h2>
+              <p>Lease with confidence and style—Start now.</p>
+              <a
+                href="https://www.lingscars.com/car-lease-deals/"
+                class="cta-button"
+                >Start Leasing</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- Fixed car/van form section -->
+        <div class="vehicle-choice">
+          <div class="tabs">
+            <button class="tab active" data-target="car">I want a car</button>
+            <button class="tab" data-target="van">I want a van</button>
+          </div>
+
+          <div class="tab-contents">
+            <div class="tab-content active" id="car">
+              <div class="toggle-buttons">
+                <button class="toggle active">Personal</button>
+                <button class="toggle">Business</button>
+              </div>
+              <form class="form">
+                <select>
+                  <option>All makes</option>
+                  <option>Toyota</option>
+                  <option>Honda</option>
+                  <option>Ford</option>
+                  <option>BMW</option>
+                  <option>Mercedes</option>
+                </select>
+                <select>
+                  <option>All models</option>
+                  <option>Corolla</option>
+                  <option>Civic</option>
+                  <option>Focus</option>
+                  <option>3 Series</option>
+                  <option>C-Class</option>
+                </select>
+                <select>
+                  <option>All body styles</option>
+                  <option>Sedan</option>
+                  <option>SUV</option>
+                  <option>Hatchback</option>
+                  <option>Convertible</option>
+                  <option>Truck</option>
+                </select>
+                <select>
+                  <option>Any budget</option>
+                  <option>Under $200/month</option>
+                  <option>$200 - $400/month</option>
+                  <option>$400 - $600/month</option>
+                  <option>$600+/month</option>
+                </select>
+                <button
+                  type="button"
+                  class="get-deals"
+                  onclick="window.location.href='https://www.lingscars.com/car-lease-deals/'"
+                >
+                  Get deals
+                </button>
+              </form>
+            </div>
+
+            <div class="tab-content" id="vans">
+              <form class="form">
+                <select>
+                  <option>All makes</option>
+                  <option>Ford</option>
+                  <option>Mercedes</option>
+                  <option>Volkswagen</option>
+                  <option>Peugeot</option>
+                  <option>Renault</option>
+                </select>
+                <select>
+                  <option>All models</option>
+                  <option>Transit</option>
+                  <option>Sprinter</option>
+                  <option>Transporter</option>
+                  <option>Boxer</option>
+                  <option>Trafic</option>
+                </select>
+                <select>
+                  <option>All body styles</option>
+                  <option>Panel Van</option>
+                  <option>Pickup</option>
+                  <option>Double Cab</option>
+                  <option>Tipper</option>
+                  <option>Luton</option>
+                </select>
+                <select>
+                  <option>Any budget</option>
+                  <option>Under $300/month</option>
+                  <option>$300 - $500/month</option>
+                  <option>$500 - $700/month</option>
+                  <option>$700+/month</option>
+                </select>
+                <button
+                  type="button"
+                  class="get-deals"
+                  onclick="window.location.href='https://www.lingscars.com/van-lease-deals/'"
+                >
+                  Get deals
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="features" aria-label="Key Features">
+        <ul class="feature-list">
+          <li class="card">
+            <i class="fas fa-tags icon"></i>
+            <p>Great Prices</p>
+          </li>
+          <li class="card">
+            <i class="fas fa-users icon"></i>
+            <p>Trusted by Thousands</p>
+          </li>
+          <li class="card">
+            <i class="fas fa-shipping-fast icon"></i>
+            <p>Fast Delivery</p>
+          </li>
+        </ul>
+      </section>
+      <section class="pricing">
+        <h2>Flexible Leasing Plans</h2>
+        <div class="pricing-cards">
+          <div class="price-card">
+            <h3>Basic</h3>
+            <p>Ideal for personal use</p>
+            <p class="price">£199/mo</p>
+            <ul>
+              <li><i class="fas fa-car-side"></i> Compact Cars</li>
+              <li><i class="fas fa-calendar-alt"></i> 12-Month Lease</li>
+              <li><i class="fas fa-shield-alt"></i> Standard Insurance</li>
+            </ul>
+            <a
+              href="https://www.lingscars.com/hubs/special-offers/"
+              class="choose-btn"
+              >Choose Plan</a
+            >
+          </div>
+
+          <div class="price-card highlighted">
+            <span class="badge">Most Popular</span>
+            <h3>Standard</h3>
+            <p>Perfect for families</p>
+            <p class="price">£299/mo</p>
+            <ul>
+              <li><i class="fas fa-car"></i> SUVs and Hatchbacks</li>
+              <li><i class="fas fa-calendar-alt"></i> 24-Month Lease</li>
+              <li><i class="fas fa-shield-alt"></i> Full Coverage</li>
+            </ul>
+            <a
+              href="https://www.lingscars.com/hubs/special-offers/"
+              class="choose-btn"
+              >Choose Plan</a
+            >
+          </div>
+
+          <div class="price-card">
+            <h3>Premium</h3>
+            <p>Luxury experience</p>
+            <p class="price">£499/mo</p>
+            <ul>
+              <li><i class="fas fa-car-alt"></i> Luxury & Sports Cars</li>
+              <li><i class="fas fa-calendar-alt"></i> 36-Month Lease</li>
+              <li><i class="fas fa-shield-virus"></i> Premium Insurance</li>
+            </ul>
+            <a
+              href="https://www.lingscars.com/hubs/special-offers/"
+              class="choose-btn"
+              >Choose Plan</a
+            >
+          </div>
+        </div>
+
+        <p class="note">
+          Need help choosing?
+          <a href="tel:01914609444">Talk to a Leasing Expert</a>
+        </p>
+      </section>
+
+      <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-cards">
+          <div class="testimonial">
+            <p>
+              "Super easy to lease and I got my car fast! Highly recommend."
+            </p>
+            <h4>- Sandra T.</h4>
+          </div>
+          <div class="testimonial">
+            <p>"Excellent customer service and affordable pricing!"</p>
+            <h4>- Mark G.</h4>
+          </div>
+          <div class="testimonial">
+            <p>
+              "The best leasing experience I've had. Hassle-free and smooth."
+            </p>
+            <h4>- Linda B.</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top container">
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>0191 460 9444</p>
+          <p>Mon–Fri 9am–5:30pm</p>
+          <p><a href="mailto:sales@lingscars.com">sales@lingscars.com</a></p>
+          <div class="footer-contact">
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-x-twitter"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Legal & Compliance</h4>
+          <ul>
+            <li><a href="#">Code of Conduct</a></li>
+            <li>
+              <a href="https://www.lingscars.com/cookie-policy/"
+                >Cookie Policy</a
+              >
+            </li>
+            <li>
+              <a href="https://www.lingscars.com/information-notice/"
+                >Information Notice</a
+              >
+            </li>
+            <li>
+              <a href="https://www.lingscars.com/vulnerable-persons-policy/"
+                >Vulnerable Persons Policy</a
+              >
+            </li>
+            <li>
+              <a href="https://www.lingscars.com/initial-disclosure-document/"
+                >Initial Disclosure Document</a
+              >
+            </li>
+            <li>
+              <a href="https://www.lingscars.com/terms-conditions/"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a href="https://www.lingscars.com/treat-customers-fairly/"
+                >Treat Customers Fairly</a
+              >
+            </li>
+            <li>
+              <a href="https://www.lingscars.com/complaints-policy/"
+                >Complaints Policy</a
+              >
+            </li>
+            <li>
+              <a href="https://www.lingscars.com/privacy-policy/"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-info">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="https://www.lingscars.com/about-us/">About Us</a></li>
+            <li>
+              <a href="https://www.lingscars.com/meet-the-team/"
+                >Meet The Team</a
+              >
+            </li>
+            <li><a href="https://museum.lingscars.com/faq">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom container">
+        <p>
+          LINGsCARS.com Limited is registered in England and Wales under company
+          number: 06178634 [15 Riverside Studios Amethyst Road, Newcastle
+          Business Park, Newcastle Upon Tyne, Tyne And Wear, NE4 7YL].
+          LINGsCARS.com Limited is authorised and regulated by the Financial
+          Conduct Authority, under FCA number: 721481. We act as a credit broker
+          not a lender. We work with a number of carefully selected credit
+          providers who may be able to offer you finance for your purchase.
+          (Written Quotation available upon request). Whichever lender we
+          introduce you to, we will typically receive commission from them
+          (either a fixed fee or a fixed percentage of the amount you borrow);
+          this will not affect the rate you are offered or the amount you will
+          pay back. The lenders we work with could pay commission at different
+          rates. All finance is subject to status and income. Terms and
+          conditions apply. Applicants must be 18 years or over. We are only
+          able to offer finance products from these providers. LINGsCARS.com
+          Limited are registered with the Information Commissioner's Office
+          under registration number: Z1098490.
+        </p>
+
+        <div class="footer-bottom-bar">
+          <p>© 2025 LingsCars Redesign. All rights reserved.</p>
+          <button id="scrollToTop">↑ Top</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
